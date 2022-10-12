@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./JS/index.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="shortcut icon" href="./Images/logo.png" type="image/x-icon">
+</head>
+
+<body onload="getmealType(),Loadcity()">
+    <div class="bg-danger header container-xxl">
+        <div class="btns d-flex  justify-content-end" style="padding-top: 14px; padding-right:3px;">
+            <button type="button" class="btn btn-link text-light text-decoration-none float-end">Login</button>
+            <button type="button" class="btn btn-outline-light float-end">Create an account</button>
+        </div>
+        <div class="d-flex justify-content-center" style="margin-top: 4%;">
+            <h1 class="edureka rounded-circle fw-bold text-danger bg-white text-center">e!</h1>
+        </div>
+        <p class="text-center text-light" style="font: normal normal 600 28px/36px Poppins; margin-top:23px;">Find the
+            best restaurants, cafés, and bars</p>
+        <div class="d-flex justify-content-center flex-wrap">
+            <div class="dropdown">
+                <button class="btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false" style="height: 54px; width:250px; margin-bottom:22px; margin-top: 5px;">
+                    Please select a location
+                </button>
+                <ul class="dropdown-menu dropdown-menu-light text-center" id="ul">
+                    <li style="height: 30px; width:250px;"><a class=" dropdown-item" href="#">Delhi</a></li>
+                </ul>
+            </div>
+
+            <div >
+            <input id="search-restaurant" class="search text-center text-secondary ms-3  border-0"
+            style="width: 280px; height: 50px;  margin-top: 6px;" type="text" placeholder="Search for restaurants"
+            id="restaurants" list="searchlocation">
+            <i class="fa-solid fa-magnifying-glass text-secondary fs-5 position-relative"
+            style="top: 3px; left: -321px;"></i>
+            <button class="btn btn-light mb-1  text-dark text-decoration-none" onclick="ShowRestaurant()"><i class="material-icons mt-1">search</i></button>
+            </div>
+        </div>
+    </div>
+    <div class="container-xxl">
+        <div class="restaurants ">
+            <p class="title fs-1 position-relative fw-bold mt-3   ms-3 font: normal normal bold 30px/46px 'Poppins'"
+                style="color: #192F60;">
+                Quick Searches
+            </p>
+            <h3 class="restaurent fs-4 position-relative mt-2   ms-3 font:normal normal normal 18px/27px 'Poppins'"
+                style="color:#8C96AB;">
+                Discover restaurants by type of meal
+            </h3>
+        </div>
+
+        <!-- cards-->
+        <div class="container-xxl d-flex flex-wrap justify-content-between" style="border-radius: 0%;">
+            <!--card 1-->
+            <div id="0" class="card-1 d-flex flex-wrap-wrap mt-5  shadow bg-body " id="0" style="height: 160px; width:360px;">
+                <div class="card-image-1" style="height: 160px; width:360px;">
+                    <img id="image0" src="" height="160px" width="160px" alt="Breakfast image">
+                    <h4 id="name0" class="card-title" style="text-align: left;margin-top: -37%; margin-left: 53%; color: #192F60;">
+                        
+                    </h4>
+                    <p id="content0" class="card-text  font: normal normal normal 14px/21px Poppins;"
+                        style="text-align: left; margin-top: 1%;  margin-left: 53%; width: 138px;height: 62px; color: #8C96AB; ">
+                    </p>
+                </div>
+            </div>
+
+            <!--card 2-->
+            <div id="1" class="card-1 d-flex  flex-wrap-wrap mt-5 shadow bg-body " style="height: 160px; width:360px;">
+                <div class="card-image-1" style="height: 160px; width:360px;">
+                    <img id="image1"  height="160px" width="160px" alt="Lunch image">
+                    <h4 id="name1" class="card-title" style="text-align: left;margin-top: -37%; margin-left: 53%; color: #192F60;">
+                        
+                    </h4>
+                    <p id="content1" class="card-text  font: normal normal normal 14px/21px Poppins;"
+                        style="text-align: left; margin-top: 1%;  margin-left: 53%; width: 138px;height: 62px; color: #8C96AB; ">
+                        
+                    </p>
+                </div>
+            </div>
+
+            <!--card 3-->
+            <div id="2" class="card-1 d-flex flex-wrap-wrap mt-5 shadow bg-body " style="height: 160px; width:360px;">
+                <div class="card-image-1" style="height: 160px; width:360px;">
+                    <img id="image2"  height="160px" width="160px" alt="Snacks image">
+                    <h4 id="name2" class="card-title" style="text-align: left;margin-top: -37%; margin-left: 53%; color: #192F60;">
+                        
+                    </h4>
+                    <p id="content2" class="card-text  font: normal normal normal 14px/21px Poppins;"
+                        style="text-align: left; margin-top: 1%;  margin-left: 53%; width: 138px;height: 62px; color: #8C96AB; ">
+                        </p>
+                </div>
+            </div>
+
+            <!--card 4-->
+            <div id="3" class="card-1 d-flex flex-wrap-wrap mt-5  shadow bg-body " style="height: 160px; width:360px;">
+                <div class="card-image-1" style="height: 160px; width:360px;">
+                    <img id="image3"  height="160px" width="160px" alt="Dinner image">
+                    <h4 id="name3" class="card-title" style="text-align: left;margin-top: -37%; margin-left: 53%; color: #192F60;">
+                        
+                    </h4>
+                    <p id="content3" class="card-text  font: normal normal normal 14px/21px Poppins;"
+                        style="text-align: left; margin-top: 1%;  margin-left: 53%; width: 138px;height: 62px; color: #8C96AB; ">
+                        
+                    </p>
+                </div>
+            </div>
+
+            <!--card 5-->
+            <div class="card-1 d-flex flex-wrap-wrap mt-5 shadow bg-body " style="height: 160px; width:360px;">
+                <div id="4" class="card-image-1" style="height: 160px; width:360px;">
+                    <img id="image4"  height="160px" width="160px" alt="Drinks image">
+                    <h4 id="name4" class="card-title" style="text-align: left;margin-top: -37%; margin-left: 53%; color: #192F60;">
+                        
+                    </h4>
+                    <p id="content4" class="card-text  font: normal normal normal 14px/21px Poppins;"
+                        style="text-align: left; margin-top: 1%;  margin-left: 53%; width: 138px;height: 62px; color: #8C96AB; ">
+                        
+                    </p>
+                </div>
+            </div>
+            <!--card 6-->
+            <div id="5" class="card-1 d-flex flex-wrap-wrap mt-5 shadow bg-body " style="height: 160px; width:360px;">
+                <div class="card-image-1" style="height: 160px; width:360px;">
+                    <img id="image5"  height="160px" width="160px" alt="Nightlife image">
+                    <h4 id="name5" class="card-title" style="text-align: left;margin-top: -37%; margin-left: 53%; color: #192F60;">
+                        
+                    </h4>
+                    <p id="content5" class="card-text  font: normal normal normal 14px/21px Poppins;"
+                        style="text-align: left; margin-top: 1%;  margin-left: 53%; width: 138px;height: 62px; color: #8C96AB; ">
+                        
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

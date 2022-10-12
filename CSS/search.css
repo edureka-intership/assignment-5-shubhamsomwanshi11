@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 1366px;
+    height: 973px;
+    background: #FBFBFB 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
+.header {
+    height: 80px;
+    background-color: #EB2929;
+    margin: 0;
+    padding: 0;
+    width: 1366px;
+}
+
+.logo {
+    display: inline-block;
+    background-color: white;
+    border-radius: 50%;
+    margin-top: 16px;
+    margin-left: 112px;
+    margin-bottom: 17px;
+    top: 16px;
+    left: 112px;
+    width: 47px;
+    height: 47px;
+    /* UI Properties */
+    text-align: center;
+    font: normal normal 600 33px/50px Poppins;
+    letter-spacing: 0px;
+    color: #EB2929;
+    opacity: 1;
+    cursor: pointer;
+
+}
+
+.btnl {
+    float: right;
+    margin-right: 28px;
+    margin-top: 29px;
+    margin-bottom: 17px;
+    width: 43px;
+    height: 23px;
+    text-align: left;
+    font: normal normal medium 16px/25px Poppins;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+    background-color: #EB2929;
+    border: none;
+    cursor: pointer;
+}
+
+.btnc {
+    float: right;
+    margin-right: 101px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    width: 181px;
+    height: 46px;
+    background-color: #EB2929;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+    opacity: 1;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.tit {
+    display: inline-block;
+    /* width: 514px;  */
+    text-align: left;
+    font: normal normal bold 36px/55px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    margin-left: 113px;
+    margin-top: 37px;
+}
+
+.container {
+    display: inline-block;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    margin-left: 113px;
+    height: 740px;
+    width: 260px;
+    margin-top: 27px;
+}
+
+.container .fh4{
+    margin-top: 17px;
+}
+.container h4 {
+    margin-top: 17px;
+    margin-left: 26px;
+    text-align: left;
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    display: inline;
+}
+
+.slocation {
+    text-align: left;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    margin-top: 10px;
+}
+
+.containlocation {
+    margin-top: 11px;
+    width: 208px;
+    height: 35px;
+    border: 1px solid #8C96AB;
+    border-radius: 3px;
+    opacity: 1;
+    color: #8C96AB;
+}
+
+.container .filters .cuisions {
+    margin-top: 22px;
+}
+
+.cui {
+    width: 52px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+}
+
+.rar {
+    margin-top: 28px;
+    margin: bottom 15px;
+}
+
+.rar h4 {
+    margin: 0;
+    width: 89px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+}
+
+
+.filters {
+    margin-left: 27px;
+}
+
+.chckbox-items {
+    width: 86px;
+    height: 20px;
+    text-align: left;
+    margin-left: 11px;
+    font: normal normal normal 14px/21px Poppins;
+    letter-spacing: 0px;
+    color: #8C96AB;
+    opacity: 1;
+}
+
+.chck {
+    width: 18px;
+    height: 18px;
+    border: 2px solid #3A5075;
+    border-radius: 2px;
+    opacity: 1;
+}
+
+.option {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.radio {
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+.sort {
+    margin-top: 29px;
+    margin-bottom: 15px;
+}
+
+.sorts {
+    width: 37px;
+    height: 25px;
+    text-align: left;
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+}
+
+.pcontainer {
+    position: absolute;
+    display: inline-block;
+}
+
+.product {
+    display: inline-block;
+    height: 291px;
+    width: 794px;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    margin-left: 45px;
+    margin-top: 27px;
+}
+
+.product .img {
+    display: inline-block;
+    border-radius: 20%;
+    width: 120px;
+    height: 120px;
+    margin-top: 25px;
+    margin-left: 35px;
+}
+
+.rightside {
+    display: inline-block;
+    position: absolute;
+}
+
+.product .rightside h2 {
+    top: 234px;
+    left: 614px;
+    width: 303px;
+    height: 43px;
+    text-align: left;
+    font: normal normal 600 30px/46px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    margin-left: 41px;
+    margin-top: 39px;
+
+}
+
+.product .rightside h4 {
+    position: absolute;
+    top: 66px;
+    left: 42px;
+    /* width: 40px; */
+    height: 23px;
+    text-align: left;
+    font: normal normal medium 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+}
+
+.product .rightside h5 {
+    margin-top: 7px;
+    margin-left: 41px;
+    /* width: 370px; */
+    height: 23px;
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #636F88;
+    opacity: 1;
+}
+
+.product .titles h2 {
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #636F88;
+    opacity: 1;
+    margin-left: 35px;
+}
+
+.product .titles {
+    margin-top: px;
+    display: inline-block;
+}
+
+.product .subcontent {
+    display: inline-block;
+    text-align: left;
+    font: normal normal normal 16px/30px Poppins;
+    letter-spacing: 0px;
+    color: #192F60;
+    opacity: 1;
+    margin-left: 36px;
+}
+
+.prduc1 {
+    position: absolute;
+    top: 520px;
+    left: 418px;
+    width: 794px;
+    height: 291px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+}
+
+
+.pagination {
+    display: flex;
+    margin-left: 230px;
+    margin-top: 38px;
+}
+
+.pagination .pags {
+    display: flex;
+    width: 36px;
+    height: 36px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #8C96AB;
+    border-radius: 7px;
+    opacity: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 26px;
+}
+
+.pagination a {
+    text-align: left;
+    font: normal normal medium 20px/30px Poppins;
+    font-size: 20px;
+    text-decoration: none;
+    letter-spacing: 0px;
+    color: #8C96AB;
+    opacity: 1;
+}

@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.edureka {
+    width: 100px;
+    height: 100px;
+    margin-top: 16px;
+    font: normal normal 600 70px/106px Poppins;
+    letter-spacing: 0px;
+    color: #EB2929;
+    opacity: 1;
+}
+
+.header {
+    background-image: url(../Images/assets/header.png);
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    height: 480px;
+    background-size: cover;
+    vertical-align:middle;
+    /* width: 100%; */
+}

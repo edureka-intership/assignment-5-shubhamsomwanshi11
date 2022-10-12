@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Page</title>
+    <link rel="stylesheet" href="../CSS/search.css">
+    <link rel="shortcut icon" href="../Images/logo.png" type="image/x-icon">
+    <script src="../JS/index.js"></script>
+</head>
+
+<body onload="getRestaurantByCity()">
+    <div class="header">
+        <div class="logo">
+            <span>e!</span>
+        </div>
+        <input type="button" value="Create an account" id="createac" class="btnc">
+        <input type="button" value="Login" id="login" class="btnl">
+    </div>
+    <div>
+        <span class="tit">Breakfast Places in Mumbai</span>
+    </div>
+    <div class="container">
+        <div class="fh4">
+            <h4>Filters</h4>
+        </div>
+        <div class="filters">
+            <span class="slocation">Select Location</span>
+        </div>
+        <div class="filters">
+            <select name="" id="" class="containlocation">
+                <option value="">Select Location</option>
+                <option value="">Mumbai</option>
+                <option value="">Delhi</option>
+                <option value="">Noida</option>
+                <option value="">Hydrabad</option>
+                <option value="">Pune</option>
+            </select>
+
+            <div class="cuisions">
+                <span class="cui">Cuision</span>
+            </div>
+
+            <div class="option">
+                <input type="checkbox" class="chck" name="north" id="">
+                <span class="chckbox-items"> North Indian</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" class="chck" name="south" id="">
+                <span class="chckbox-items"> South Indian</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" class="chck" name="chinese" id="">
+                <span class="chckbox-items"> Chinese</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" class="chck" name="fastfood" id="">
+                <span class="chckbox-items"> Fast Food</span>
+            </div>
+            <div class="option">
+                <input type="checkbox" class="chck" name="streetfood" id="">
+                <span class="chckbox-items"> Street Food</span>
+            </div>
+
+            <div class="rar">
+                <h4 class="cost">Cost for Two</h4>
+            </div>
+            <div class="radio">
+                <input type="radio" name="select" id="" class="chck">
+                <span class="chckbox-items"> Less Than ₹500</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="select" id="" class="chck">
+                <span class="chckbox-items"> ₹500 to ₹1000</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="select" id="" class="chck">
+                <span class="chckbox-items"> ₹1000 to ₹1500</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="select" id="" class="chck">
+                <span class="chckbox-items"> ₹1500 to ₹2000</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="select" id="" class="chck">
+                <span class="chckbox-items"> ₹2000+</span>
+            </div>
+
+            <div class="sort">
+                <span class="sorts">Sort</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="sort" id="" class="chck">
+                <span class="chckbox-items">Price low to high</span>
+            </div>
+            <div class="radio">
+                <input type="radio" name="sort" id="" class="chck">
+                <span class="chckbox-items">Price high to low</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="pcontainer">
+        <div class="product" id="product0">
+            <img src="../Images/assets/breakfast.png" id="image0" alt="" class="img">
+            <div class="rightside">
+                <h2 id="name0">The Big Chill Cakery</h2>
+                <h4 id="locality0">FORT</h4>
+                <h5 id="address0">Shop 1, Plot D, Samrudhhi Complex, Chincholi...</h5>
+            </div>
+            <hr style="width: 90%; color: #DEDFE5; height: 0.5px; background-color: #DEDFE5;">
+
+            <div class="titles">
+                <h2>CUISINES:</h2>
+                <h2>COST FOR TWO:</h2>
+            </div>
+
+            <div class="subcontent">
+                <h2 id="cuisines0">Bakery</h2>
+                <h2 id="price0">₹700</h2>
+            </div>
+        </div>
+
+        <div class="product" id="product1">
+            <img src="../Images/assets/breakfast.png" id="image1" alt="" class="img">
+            <div class="rightside">
+                <h2 id="name1">The Big Chill Cakery</h2>
+                <h4 id="locality1">FORT</h4>
+                <h5 id="address1">Shop 1, Plot D, Samrudhhi Complex, Chincholi...</h5>
+            </div>
+            <hr style="width: 90%; color: #DEDFE5; height: 0.5px; background-color: #DEDFE5;">
+
+            <div class="titles">
+                <h2>CUISINES:</h2>
+                <h2>COST FOR TWO:</h2>
+            </div>
+
+            <div class="subcontent">
+                <h2 id="cuisines1">Bakery</h2>
+                <h2 id="price1">₹700</h2>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <div class="pags"><a href="#" class="pag">&laquo;</a></div>
+            <div class="pags"
+                style="background: #8C96AB 0% 0% no-repeat padding-box;border: 1px solid #8C96AB;border-radius: 7px;opacity: 1;">
+                <a style="text-align: left;font: normal normal medium 20px/30px Poppins;letter-spacing: 0px;color: #FFFFFF;opacity: 1;"
+                    href="#" class="pag">1</a></div>
+            <div class="pags"><a href="#" class="pag">2</a></div>
+            <div class="pags"><a href="#" class="pag">3</a></div>
+            <div class="pags"><a href="#" class="pag">4</a></div>
+            <div class="pags"><a href="#" class="pag">5</a></div>
+            <div class="pags"><a href="#" class="pag">6</a></div>
+            <div class="pags"><a href="#" class="pag">&raquo;</a></div>
+        </div>
+    </div>
+</body>
+
+</html>
